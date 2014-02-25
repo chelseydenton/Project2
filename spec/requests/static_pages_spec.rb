@@ -10,8 +10,8 @@ describe "StaticPages" do
 
   describe "Home page" do
     before { visit root_path }
-    let(:heading)    { 'Blog' }
-    let(:page_title) { 'Blog' }
+    let(:heading)    { 'spaccccccce' }
+    let(:page_title) { 'Home' }
 
     it_should_behave_like "all static pages"
   end
@@ -28,6 +28,14 @@ describe "StaticPages" do
     before { visit faq_path }
     let(:heading)    { 'Frequently Asked Questions' }
     let(:page_title) { 'FAQ' }
+
+    it_should_behave_like "all static pages"
+  end
+
+  describe "blog page" do
+    before { visit blog_path }
+    let(:heading)    { 'Blog' }
+    let(:page_title) { 'Blog' }
 
     it_should_behave_like "all static pages"
   end

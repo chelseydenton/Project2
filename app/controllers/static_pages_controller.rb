@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def blog
   end
+
+  def home
+  end
 end
