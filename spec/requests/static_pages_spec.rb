@@ -18,16 +18,16 @@ describe "StaticPages" do
 
   describe "about page" do
     before { visit about_path }
-    let(:heading)    { 'About Us' }
-    let(:page_title) { 'About Jackson and Chelsey' }
+    let(:heading)    { 'About Chelsey and Jackson' }
+    let(:page_title) { 'About Us' }
 
     it_should_behave_like "all static pages"
   end
 
   describe "faq page" do
     before { visit faq_path }
-    let(:heading)    { 'FAQ' }
-    let(:page_title) { 'Frequently Asked Questions' }
+    let(:heading)    { 'Frequently Asked Questions' }
+    let(:page_title) { 'FAQ' }
 
     it_should_behave_like "all static pages"
   end
